@@ -8,6 +8,7 @@ interface ModelAttributes<T> {
 
 interface Sync<T> {
 	fetch(id: number): AxiosPromise;
+	save(data: T): AxiosPromise;
 }
 
 interface Events {
